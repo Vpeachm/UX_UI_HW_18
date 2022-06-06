@@ -1,0 +1,99 @@
+body 
+{background: black;
+}
+
+title 
+{color: white;
+}
+
+header 
+{display: flex;
+align-items: center;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+
+.topUl 
+{color: white; 
+text-align: center;
+}
+ 
+.content 
+{width: 70%; 
+margin:0 auto;
+}
+
+
+.picOme 
+{ width: 400px; 
+float: left; 
+margin-left: 500px; 
+margin-bottom: 20px;
+margin-right: 500px;
+}
+
+
+p 
+{color: white; 
+float: left;
+}
+
+.inline-block 
+{display: inline-block; 
+vertical-align: top;
+text-align: center;
+}
+
+.logo 
+{width: 23%; 
+padding: 1%;
+}
+
+nav 
+{width: 100%; 
+padding: 1%; 
+text-align: center; 
+}
+
+ul 
+{width: 60%; 
+margin-left: auto; 
+display: inline; 
+text-align: center;
+}
+
+
+.heroImg 
+{min-height: calc(100vh); /* this is what fixed my footer issue??*/
+padding: 25px;
+}
+
+
+footer 
+{background-color: #373738; 
+height: 100px;
+margin: 0 0 0 0;
+padding: 0 0 0 0;
+}
+
+ul 
+{text-align: center;
+}
+
+li 
+{text-align: center; 
+display: inline; 
+padding-left: 10px; 
+padding-right: 10px;
+}
+
+
+.footerLists 
+{display: inline-block; 
+padding: 10px 75px;
+}
+
+.footsie 
+{position: b
+}
