@@ -56,12 +56,12 @@ padding: 1%;
 text-align: center; 
 }
 
-ul 
+/*ul 
 {width: 60%; 
-margin-left: auto; 
 display: inline; 
 text-align: center;
-}
+align-items: center;
+}*/
 
 
 .heroImg 
@@ -69,12 +69,123 @@ text-align: center;
 padding: 25px;
 }
 
+/* SKILLS SECTION*/
+
+.flexContainer 
+{ display:flex ;
+flex-direction: row;
+}
+
+h3
+{ color: white;
+}
+
+.divInSkills
+{ width: 33%;
+margin: 0px 50px 0px 50px;
+border: white 2px; /* why not wokring?*/
+text-align: center;
+/*flex-direction: column; 
+display: flex;
+justify-content: center;
+*/
+}
+
+h4 { color: white}
+
+/* WORK SECTION */
+
+.workTitle {
+    grid-template-areas: "title";
+    color: white;
+    margin-left: 50px;
+}
+
+.workPics {
+width: 300px;
+}
+
+.workGrid
+{ display: grid; 
+grid-template-columns: 1fr 2fr;
+grid-template-rows: 2fr 2fr 2fr 2fr 2fr 1fr;
+grid-template-areas: 
+"title title title title"
+" image text "
+" image text "
+" image text "
+" image text "
+"viewAll";
+gap: 20px;
+align-items: center;
+}
+
+#img1grid
+{ grid-template-areas: "image";
+    margin-left: 80px;
+    padding-left: 85px;
+}
+
+#text1grid
+{grid-template-areas: "text";
+    margin-right: 80px;
+    padding-left: 30px;
+  
+}
+
+#img2grid
+{grid-template-areas: "image";
+   margin-left: 80px;
+   padding-left: 85px;
+}
+
+#text2grid
+{grid-template-areas: "text";
+    margin-right: 80px;
+    padding-left: 30px;
+}
+
+#img3grid
+{grid-template-areas: "image";
+    margin-left: 80px;
+    padding-left: 85px;
+}
+
+#text3grid
+{grid-template-areas: "text";
+    margin-right: 80px;
+    padding-left: 30px;
+}
+
+#img4grid
+{grid-template-areas: "image";
+    margin-left: 80px;
+    padding-left: 85px;
+}
+
+#text4grid
+{grid-template-areas: "text";
+    margin-right: 80px;
+    padding-left: 30px;
+}
+
+#viewAlll
+{ grid-template-areas: "viewAll";
+    margin-left: 50px;
+}
+
+.projName 
+{ font-size: 30px;}
+
+/* FOOTER STARTS HERE */
 
 footer 
 {background-color: #373738; 
 height: 100px;
 margin: 0 0 0 0;
 padding: 0 0 0 0;
+align-items: center;
+justify-content: center;
 }
 
 ul 
@@ -88,12 +199,44 @@ padding-left: 10px;
 padding-right: 10px;
 }
 
+.footsie 
+{ align-items: baseline;
+
+}
 
 .footerLists 
 {display: inline-block; 
 padding: 10px 75px;
+display: flex;
+justify-content: center;
 }
 
-.footsie 
-{position: b
+/* MEDIA QUERY SECTION*/
+
+@media only screen and (max-width: 600)
+{ .flexContainer 
+    { display:flex ;
+    flex-direction: column;}
+
+    .divInSkills
+    { width: 100%;
+    margin: 0px 50px 0px 50px;
+    border: white 2px; /* why not wokring?*/
+    text-align: center;}
+    
+    .workGrid
+   { display: grid; 
+   grid-template-columns: 1fr 2fr;
+   grid-template-rows: 2fr 2fr 2fr 2fr 2fr 1fr;
+   grid-template-areas: 
+   "title title title title"
+   " image text "
+   " image text "
+   " image text "
+   " image text "
+   "viewAll";
+    gap: 20px;
+   align-items: center;
+}
+
 }
